@@ -9,7 +9,7 @@ body{
     grid-template-areas: "nav nav"
                         "section section"
                         "footer footer";
-    grid-template-rows: auto 100vh 50px;
+    grid-template-rows: 1fr 90vh 1fr;
 
 }
 .nav-p{
@@ -20,12 +20,19 @@ body{
     align-items: center;
     color: white;
 }
-.seccion-p{
+.container{
     grid-area: section;
-    background-color: aqua;
+    background-color: rgb(133, 133, 133);
+    
+    overflow-y: auto;
+
+}
+.seccion-p{
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr;
+    background-color: peru;
+    text-align: center;
 }
 .footer-p{
     grid-area: footer;
@@ -44,4 +51,22 @@ body{
 }
 .titulo{
     flex-grow: 1; /* default 0 */ 
+}
+.busqueda{
+    text-align: center;
+    margin-bottom: 2%;
+}
+#opciones{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+}
+article .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img{
+    width: 90%;
+    padding: 3%;
 }

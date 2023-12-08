@@ -9,24 +9,32 @@
   <body>
     <header></header>
 
-
     <nav class="nav-p">
       <object class="menu" data="assets/svg/auto.svg"></object>
       <h2 class="titulo">Electric Cars</h2>
       <object class="menu" data="assets/svg/menu.svg"></object>
     </nav>
 
-
-
-
-
-    <aside class="aside-p">contenido aside</aside>
-    <section class="seccion-p">
-      <article>articulo 1</article>
-      <article>articulo 2</article>
-      <article>articulo 3</article>
-      <article>articulo 4</article>
-    </section>
+    <div class="container">
+      <aside class="aside-p">contenido aside</aside>
+      <section class="busqueda">
+        <h3>Ordenar Por:</h3>
+        <select id="opciones">
+          <option value=""><p>Precio</p></option>
+          <option value="$1.000"><p>$1.000</p></option>
+        </select>
+      </section>
+      <section class="seccion-p">
+        <article class="items">
+            <div>
+                <img src="assets/img/img1.jpg" alt="" />
+            </div>
+          
+          <p>Model: City Car</p>
+          <button>Ver Más</button>
+        </article>
+      </section>
+    </div>
     <footer class="footer-p">contenido footer</footer>
   </body>
 </html>
