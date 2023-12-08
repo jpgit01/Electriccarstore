@@ -39,7 +39,7 @@ body {
   grid-area: aside;
   background-color: yellowgreen;
 }
-.menu {
+.menu{
   width: 40px;
   height: 40px;
   margin: 10px;
@@ -51,7 +51,7 @@ body {
   margin-right: 3%;
 }
 .titulo {
-  flex-grow: 1; /* default 0 */
+  flex-grow: 1;
 }
 .busqueda {
   text-align: center;
@@ -99,12 +99,12 @@ article {
     background-color: rgb(177, 177, 177);
     display: grid;
     grid-template-areas:
-      "aside-1    section-p"
-      "footer   section-p";
+      "aside-1    secction-p"
+      "footer   secction-p";
       grid-template-rows: 88vh 12vh;
   }
   .container{
-    grid-area: section-p;
+    grid-area: secction-p;
   }
   .nav-p {
     display: none;
@@ -125,31 +125,33 @@ article {
     padding: 0;
     
   };
-  ul li{
-  }
-  .aside-menu-1{
+  .asidemenu1{
     display: flex;
-  flex-direction: row;
+    background-color: red;
   }
 
   .seccion-p {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     grid-gap: 1rem;
     text-align: center;
     flex-wrap: wrap;
   }
-  article {
+  .items {
     width: 20%;
   }
   .footer-p{
     background-color: #022c23;
   }
+  .titulo{
+    font-size: 1rem;
+  }
 }
 
 
 
-/* CSS */
+/* CSS  boton adorno ;*/
 .button-85 {
   padding: 0.6em 2em;
   border: none;
