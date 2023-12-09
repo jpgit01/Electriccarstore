@@ -8,7 +8,7 @@ h6,
 p {
   font-family: "Raleway", sans-serif;
 }
-.aside-t{
+.aside-t {
   display: none;
 }
 body {
@@ -18,8 +18,26 @@ body {
   grid-template-areas:
     "nav"
     "section"
+    "num"
     "footer";
-  grid-template-rows: 90px calc(100vh - 180px) 90px;
+  grid-template-rows: 90px calc(100vh - 240px) 60px 100px;
+}
+.numeros{
+  grid-area: num;
+  background-color: rgb(177, 177, 177);
+  
+}
+.numeros ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 3%;
+  padding-right: 10%;
+  
+}
+.numeros ul li a{
+  text-decoration: none;
+  color: black;
 }
 .nav-p {
   grid-area: nav;
@@ -28,6 +46,9 @@ body {
   flex-direction: row;
   align-items: center;
   color: white;
+}
+.nav-t {
+  display: none;
 }
 .container {
   grid-area: section;
@@ -42,7 +63,7 @@ body {
   grid-area: aside;
   background-color: yellowgreen;
 }
-.menu{
+.menu {
   width: 40px;
   height: 40px;
   margin: 10px;
@@ -97,7 +118,6 @@ article {
   width: 100%;
 }
 
-
 @media (min-width: 576px) {
   body {
     margin: 0;
@@ -105,10 +125,14 @@ article {
     grid-template-areas:
       "nav nav"
       "asidet section"
+      "num num"
       "footer   footer";
-      grid-template-rows: 90px calc(100vh - 200px) 110px;
+      grid-template-rows: 90px calc(100vh - 250px) 60px 100px;
   }
-  .nav-t{
+  .numeros ul{
+    padding-left: 10%;
+  }
+  .nav-t {
     background-color: green;
     grid-area: nav;
     display: flex;
@@ -116,48 +140,46 @@ article {
     align-items: center;
     color: white;
   }
-  .nav-p{
+  .nav-p {
     display: none;
   }
-  .nav-t ul{
+  .nav-t ul {
     display: flex;
     gap: 3rem;
     margin-right: 3%;
     list-style: none;
     color: white;
   }
-  .aside-t{
+  .aside-t {
     grid-area: asidet;
     display: flex;
   }
-  #opciones1{
+  #opciones1 {
     width: 80%;
     height: 30px;
     border-radius: 10px;
     color: black;
   }
-  .busqueda-m{
+  .busqueda-m {
     display: none;
   }
   .items {
     width: 40%;
   }
-  .footer-p{
+  .footer-p {
     grid-area: footer;
     background-color: green;
     color: white;
-    text-align: center;
+
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
   }
-  .contailer{
+  .contailer {
     grid-area: section;
   }
 }
-
-
 
 @media (min-width: 992px) {
   body {
@@ -166,16 +188,18 @@ article {
     display: grid;
     grid-template-areas:
       "aside-1    secction-p"
-      "footer   secction-p";
-      grid-template-rows: 87vh 13vh;
+      "aside-1    secction-p"
+      "footer   num";
+    grid-template-rows: 87vh 13vh;
   }
-  .container{
+  .container {
     grid-area: secction-p;
+    margin-top: 5%;
   }
-  .nav-t  {
+  .nav-t {
     background-color: red;
   }
-  .menuaside{
+  .menuaside {
     display: flex;
     flex-direction: row;
   }
@@ -187,18 +211,16 @@ article {
     color: white;
     padding: 2%;
     text-align: center;
-    
   }
-  .nav-t{
+  .nav-t {
     display: none;
   }
 
-  ul{
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    
-  };
+  }
   .seccion-p {
     display: flex;
     flex-direction: row;
@@ -210,17 +232,17 @@ article {
   .items {
     width: 20%;
   }
-  .footer-p{
+  .footer-p {
     background-color: #022c23;
     padding: 2%;
   }
-  .titulo{
+  .titulo {
     font-size: 20px;
   }
-  .aside-t{
+  .aside-t {
     display: none;
   }
-  .nav-t{
+  .nav-t {
     display: none;
   }
 }
