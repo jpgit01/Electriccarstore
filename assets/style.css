@@ -188,9 +188,8 @@ article {
     display: grid;
     grid-template-areas:
       "aside-1    secction-p"
-      "aside-1    secction-p"
       "footer   num";
-    grid-template-rows: 87vh 13vh;
+    grid-template-rows: 85vh 15vh;
   }
   .container {
     grid-area: secction-p;
